@@ -1,0 +1,100 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background: radial-gradient(rgb(200,200,200), rgb(100,100,100));
+}
+header{
+    background: url(../img/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 4rem !important; 
+    box-shadow: 0 0 10px 2px rgb(24, 116, 116);
+}
+
+header h1{
+    animation-name: color;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav{
+    background-color: rgba(0,43,72,.5);
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: .5rem ;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all .3s;
+}
+nav a:hover{
+    background-color: rgba(0,43,72,.5);
+    color: aliceblue;
+}
+
+
+
+@keyframes color {
+    0% {color:red; transform: translateY(0px);}
+    25% {color: orange;transform: translateY(1px);}
+    50% {color: blue; transform: translateY(2px);}
+    100% {color: green; transform: translateY(0px);}
+    
+}
+
+article{
+    background: rgba(1, 1, 1, .5);
+    max-width: 300px;
+    color: #fff;
+    border-radius:10px ;
+}
+article img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card-body{
+    padding: 1rem;
+    text-align: justify;
+}
+article:hover{
+    outline:1px solid rgba(0, 0, 0, .3);
+}
+.container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+article:nth-child(1):hover{
+    outline: 5px solid rgb(0,0,0,.3);
+}
+
+/*article:nth-child(2):hover{
+    border: 5px solid rgb(0,0,0,.3);
+}*/
+
+article:nth-child(2):hover{
+    box-shadow: 5px solid rgb(0,0,0,.3);
+}
+
+article:nth-child(3):hover{
+    box-shadow: 5px solid rgb(0,0,0,.3);
+}
