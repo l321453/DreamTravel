@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +10,89 @@
     <link rel="shortcut icon" href="./img/ikon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header style="padding: 2rem 0; text-align:center; font-weight: bold; ">
         <h1>
             DreamTravel
         </h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Uticélok</a></li>
-            <li><a href="#">Galéria</a></li>
-            <li><a href="#">Kapcsolat</a></li>
-            <li><a href="#">Turizmus</a></li>
-            <li><a href="#">Rólunk</a></li>
-        </ul>
-    </nav>
-    <div class="container">
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Uticélok</a></li>
+                <li><a href="#">Galéria</a></li>
+                <li><a href="#">Kapcsolat</a></li>
+                <li><a href="#">Turizmus</a></li>
+                <li><a href="#">Rólunk</a></li>
+            </ul>
+        </nav>
+        <div class="container">
 
-        <article>
-            <figure>
-                <img src="./img/Párizs.jpg" alt="Párizs">
-            </figure>
-            <div class="card-body">
-                <h3>Párizs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas cum inventore enim dolorum repudiandae nemo illum consectetur eveniet quo voluptas sunt assumenda ratione repellendus deleniti ipsum, officiis optio asperiores!</p>
-            </div>
-        </article>
+            <article>
+                <figure>
+                    <img src="./img/Párizs.jpg" alt="Párizs">
+                </figure>
+                <div class="card-body">
+                    <h3>Párizs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas cum inventore enim dolorum
+                        repudiandae nemo illum consectetur eveniet quo voluptas sunt assumenda ratione repellendus
+                        deleniti ipsum, officiis optio asperiores!</p>
+                </div>
+            </article>
 
-        <article>
-            <figure>
-                <img src="./img/Párizs.jpg" alt="Párizs">
-            </figure>
-            <div class="card-body">
-                <h3>Párizs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas cum inventore enim dolorum repudiandae nemo illum consectetur eveniet quo voluptas sunt assumenda ratione repellendus deleniti ipsum, officiis optio asperiores!</p>
-            </div>
-        </article>
+            <article>
+                <figure>
+                    <img src="./img/Róma.jpg" alt="Párizs">
+                </figure>
+                <div class="card-body">
+                    <h3>Róma</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas cum inventore enim dolorum
+                        repudiandae nemo illum consectetur eveniet quo voluptas sunt assumenda ratione repellendus
+                        deleniti ipsum, officiis optio asperiores!</p>
+                </div>
+            </article>
 
-        <article>
-            <figure>
-                <img src="./img/Párizs.jpg" alt="Párizs">
-            </figure>
-            <div class="card-body">
-                <h3>Párizs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas cum inventore enim dolorum repudiandae nemo illum consectetur eveniet quo voluptas sunt assumenda ratione repellendus deleniti ipsum, officiis optio asperiores!</p>
+            <article>
+                <figure>
+                    <img src="./img/Tokió.jpg" alt="Párizs">
+                </figure>
+                <div class="card-body">
+                    <h3>Tokió</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas cum inventore enim dolorum
+                        repudiandae nemo illum consectetur eveniet quo voluptas sunt assumenda ratione repellendus
+                        deleniti ipsum, officiis optio asperiores!</p>
+                </div>
+            </article>
+        </div>
+        <div>
+            <h1 style="width: 90%; margin: 5rem auto 0 auto;">Galéria</h1>
+            <div class="Galery Grid">
+                <figure><img class="picture" src="./img/utazás1.jpg" alt=""></figure>
+                <figure><img class="picture" src="./img/utazás2.jpg" alt=""></figure>
+                <figure><img class="picture" src="./img/utazás3.jpg" alt=""></figure>
+                <figure><img class="picture" src="./img/utazás4.jpg" alt=""></figure>
             </div>
-        </article>
+        </div>
+        <div>
+            <h1 style="width: 90%; margin: 5rem auto 0 auto;">Jelentkezés utazásra</h1>
+        </div>
+        <div class="container">
+            <form action="">
+                <label for="name" >Név: </label>
+                <input type="text" name="" id="name">
+                <label for="email">Email: </label>
+                <input type="email" name="" id="email">
+                <label for="destination">Úticél: </label>
+                <select name="" id="destination">
+                    <option value="Róma">Róma</option>
+                    <option value="Párizs">Párizs</option>
+                    <option value="Tokió">Tokió</option>
+                    <option value="" selected hidden>Válasszon!</option>
+                </select>
+            </form>
+        </div>
+
         
-    </div>
-</body>    
+    </main>
+</body>

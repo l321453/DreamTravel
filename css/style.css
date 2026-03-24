@@ -67,7 +67,13 @@ article{
 }
 article img{
     width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
+    
+}
+article figure{
+    width: 300px;
+    height: 200px;
 }
 .card-body{
     padding: 1rem;
@@ -83,7 +89,7 @@ article:hover{
     justify-content: center;
     align-items: center;
 }
-article:nth-child(1):hover{
+article:first-child:hover{
     outline: 5px solid rgb(0,0,0,.3);
 }
 
@@ -95,6 +101,67 @@ article:nth-child(2):hover{
     box-shadow: 5px solid rgb(0,0,0,.3);
 }
 
-article:nth-child(3):hover{
+article:last-child:hover{
     box-shadow: 5px solid rgb(0,0,0,.3);
 }
+
+.Grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 2rem auto;
+    justify-items: center;
+    width: 100%;
+    gap: .5rem;
+    border-top: 1px solid rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(100, 100, 100) ;
+    padding: 1rem 0 ;
+    
+    
+}
+.Galery figure{
+    width: 300px;
+    margin: 0;
+}
+.picture{
+    width: 90%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    justify-content: center;
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    
+}
+form{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    
+}
+form input{
+    text-align: center;
+    padding: .3rem;
+    
+
+}
+form select{
+    padding: .3rem;
+}
+
+@media (max-width: 1260px){
+    .Grid{
+        grid-template-columns: repeat(2, 1fr);
+
+    
+}
+.Galery figure{
+    width: 250px;
+}
+}
+@media (max-width: 460px){
+    .Grid{
+        grid-template-columns: 1fr;
+    }
+}
+
