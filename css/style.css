@@ -142,12 +142,70 @@ form{
 form input{
     text-align: center;
     padding: .3rem;
+    display: block;
+    
+    
+    
     
 
+}
+form label{
+    display: block;
+    
+    
 }
 form select{
     padding: .3rem;
 }
+
+footer a{
+    display: block;
+    border-radius:5px;
+    text-decoration: none ;
+    color: #000;
+    border: 1px solid #fff;
+    padding: .3rem .5rem;
+    margin: auto;
+    text-align: center;
+    width: 10rem;
+    margin-bottom: 5rem; 
+    margin-top: 5rem;
+    
+    
+}
+footer a:hover{
+    box-shadow: 0 0 10px 2px #000;
+}
+footer a:active{
+    box-shadow: 0 0 10px 2px #000;
+}
+table, td, th{
+    border: 1px solid #000;
+}
+td, th{
+    padding: .3rem 1rem;
+}
+table{
+    margin: 0 auto;
+}
+th{
+    background: rgb(50, 50, 50);
+    color: white;
+}
+.Galery img{
+    transition: transform .2s;
+}
+.Galery img:hover{
+    transform: translateY(-2px);
+}
+.Galery img:active{
+    transform: rotateX(60deg);
+    transform-style: preserve-3d;
+}
+figure{
+    perspective: 1000px;
+}
+
 
 @media (max-width: 1260px){
     .Grid{

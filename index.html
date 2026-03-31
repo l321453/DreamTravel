@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header style="padding: 2rem 0; text-align:center; font-weight: bold; ">
+    <header style="padding: 2rem 0; text-align:center; font-weight: bold; " id="top">
         <h1>
             DreamTravel
         </h1>
@@ -21,10 +21,10 @@
         <nav>
             <ul>
                 <li><a href="#">Uticélok</a></li>
-                <li><a href="#">Galéria</a></li>
+                <li><a href="#galery">Galéria</a></li>
                 <li><a href="#">Kapcsolat</a></li>
                 <li><a href="#">Turizmus</a></li>
-                <li><a href="#">Rólunk</a></li>
+                <li><a href="./about_as.html" target="_blank">Rólunk</a></li>
             </ul>
         </nav>
         <div class="container">
@@ -67,12 +67,34 @@
         </div>
         <div>
             <h1 style="width: 90%; margin: 5rem auto 0 auto;">Galéria</h1>
-            <div class="Galery Grid">
+            <div class="Galery Grid" id="galery">
                 <figure><img class="picture" src="./img/utazás1.jpg" alt=""></figure>
                 <figure><img class="picture" src="./img/utazás2.jpg" alt=""></figure>
                 <figure><img class="picture" src="./img/utazás3.jpg" alt=""></figure>
                 <figure><img class="picture" src="./img/utazás4.jpg" alt=""></figure>
             </div>
+        <table>
+            <tr>
+                <th>Cél</th>
+                <th>Indulási idő</th>
+                <th>Ár</th>
+            </tr>
+            <tr>
+                <td>Párizs</td>
+                <td>2026.05.05</td>
+                <td>70000Ft</td>
+            </tr>
+            <tr>
+                <td>Róma</td>
+                <td>2026.05.03</td>
+                <td rowspan="2">80000Ft</td>
+            </tr>
+            <tr>
+                <td>Velence</td>
+                <td>2026.05.06</td>
+                
+            </tr>
+        </table>
         </div>
         <div>
             <h1 style="width: 90%; margin: 5rem auto 0 auto;">Jelentkezés utazásra</h1>
@@ -84,7 +106,7 @@
                 <label for="email">Email: </label>
                 <input type="email" name="" id="email">
                 <label for="destination">Úticél: </label>
-                <select name="" id="destination">
+                <select name="" id="destination" style="width: 100%;">
                     <option value="Róma">Róma</option>
                     <option value="Párizs">Párizs</option>
                     <option value="Tokió">Tokió</option>
@@ -95,4 +117,8 @@
 
         
     </main>
+    <footer >
+        
+        <a href="#top">Vissza</a>
+    </footer>
 </body>
